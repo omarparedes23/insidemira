@@ -1,0 +1,289 @@
+backend:
+  name: github
+  repo: omarparedes23/insidemira
+  branch: main
+  base_url: https://insidemira.vercel.app
+  auth_endpoint: api/auth
+  commit_messages:
+    create: 'Create {{slug}} via CMS'
+    update: 'Update {{slug}} via CMS'
+    delete: 'Delete {{slug}} via CMS'
+    uploadMedia: 'Upload media via CMS'
+    deleteMedia: 'Delete media via CMS'
+
+media_folder: public/images
+public_folder: /images
+
+collections:
+  - name: "site_content"
+    label: "Site Content"
+    files:
+      - name: "russian"
+        label: "Russian Content (Русский)"
+        file: "messages/ru.json"
+        fields:
+          # Navigation Section
+          - label: "Navigation"
+            name: "nav"
+            widget: "object"
+            fields:
+              - { label: "About (Обо мне)", name: "about", widget: "string" }
+              - { label: "Methods (Как я работаю)", name: "methods", widget: "string" }
+              - { label: "Services (Услуги)", name: "services", widget: "string" }
+              - { label: "Topics (Темы)", name: "topics", widget: "string" }
+              - { label: "Thoughts (Мысли)", name: "thoughts", widget: "string" }
+              - { label: "Contact (Контакт)", name: "contact", widget: "string" }
+
+          # Hero Section
+          - label: "Hero"
+            name: "hero"
+            widget: "object"
+            fields:
+              - { label: "Title (Заголовок)", name: "title", widget: "string" }
+              - { label: "Subtitle (Подзаголовок)", name: "subtitle", widget: "string" }
+              - { label: "Description (Описание)", name: "description", widget: "text" }
+              - { label: "CTA Button (Кнопка)", name: "cta", widget: "string" }
+
+          # About Section
+          - label: "About"
+            name: "about"
+            widget: "object"
+            fields:
+              - { label: "Title (Заголовок)", name: "title", widget: "string" }
+              - { label: "Paragraph 1 (Абзац 1)", name: "paragraph1", widget: "text" }
+              - { label: "Paragraph 2 (Абзац 2)", name: "paragraph2", widget: "text" }
+              - { label: "Paragraph 3 (Абзац 3)", name: "paragraph3", widget: "text" }
+
+          # Methods Section
+          - label: "Methods"
+            name: "methods"
+            widget: "object"
+            fields:
+              - { label: "Section Title", name: "title", widget: "string" }
+              - label: "EOT Method"
+                name: "eot"
+                widget: "object"
+                fields:
+                  - { label: "Title", name: "title", widget: "string" }
+                  - { label: "Description", name: "description", widget: "text" }
+              - label: "Regression Method"
+                name: "regression"
+                widget: "object"
+                fields:
+                  - { label: "Title", name: "title", widget: "string" }
+                  - { label: "Description", name: "description", widget: "text" }
+              - label: "Gestalt Method"
+                name: "gestalt"
+                widget: "object"
+                fields:
+                  - { label: "Title", name: "title", widget: "string" }
+                  - { label: "Description", name: "description", widget: "text" }
+              - label: "Simboldrama Method"
+                name: "simboldrama"
+                widget: "object"
+                fields:
+                  - { label: "Title", name: "title", widget: "string" }
+                  - { label: "Description", name: "description", widget: "text" }
+
+          # Services Section
+          - label: "Services"
+            name: "services"
+            widget: "object"
+            fields:
+              - { label: "Section Title", name: "title", widget: "string" }
+              - label: "Individual Session"
+                name: "individual"
+                widget: "object"
+                fields:
+                  - { label: "Title", name: "title", widget: "string" }
+                  - { label: "Duration", name: "duration", widget: "string" }
+                  - { label: "Price", name: "price", widget: "string" }
+                  - { label: "Description", name: "description", widget: "text" }
+              - label: "Package"
+                name: "package"
+                widget: "object"
+                fields:
+                  - { label: "Title", name: "title", widget: "string" }
+                  - { label: "Duration", name: "duration", widget: "string" }
+                  - { label: "Price", name: "price", widget: "string" }
+                  - { label: "Description", name: "description", widget: "text" }
+              - label: "Group Session"
+                name: "group"
+                widget: "object"
+                fields:
+                  - { label: "Title", name: "title", widget: "string" }
+                  - { label: "Duration", name: "duration", widget: "string" }
+                  - { label: "Price", name: "price", widget: "string" }
+                  - { label: "Description", name: "description", widget: "text" }
+
+          # Topics Section
+          - label: "Topics"
+            name: "topics"
+            widget: "object"
+            fields:
+              - { label: "Section Title", name: "title", widget: "string" }
+              - { label: "Tags", name: "tags", widget: "list" }
+
+          # Thoughts Section
+          - label: "Thoughts"
+            name: "thoughts"
+            widget: "object"
+            fields:
+              - { label: "Section Title", name: "title", widget: "string" }
+              - { label: "Quote 1", name: "quote1", widget: "text" }
+              - { label: "Quote 2", name: "quote2", widget: "text" }
+              - { label: "Quote 3", name: "quote3", widget: "text" }
+
+          # Contact Section
+          - label: "Contact"
+            name: "contact"
+            widget: "object"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
+              - { label: "CTA", name: "cta", widget: "string" }
+              - { label: "Telegram URL", name: "telegramUrl", widget: "string" }
+
+          # Footer Section
+          - label: "Footer"
+            name: "footer"
+            widget: "object"
+            fields:
+              - { label: "Tagline", name: "tagline", widget: "string" }
+              - { label: "Rights", name: "rights", widget: "string" }
+              - { label: "Telegram Label", name: "telegram", widget: "string" }
+
+      - name: "english"
+        label: "English Content"
+        file: "messages/en.json"
+        fields:
+          # Navigation Section
+          - label: "Navigation"
+            name: "nav"
+            widget: "object"
+            fields:
+              - { label: "About", name: "about", widget: "string" }
+              - { label: "Methods", name: "methods", widget: "string" }
+              - { label: "Services", name: "services", widget: "string" }
+              - { label: "Topics", name: "topics", widget: "string" }
+              - { label: "Thoughts", name: "thoughts", widget: "string" }
+              - { label: "Contact", name: "contact", widget: "string" }
+
+          # Hero Section
+          - label: "Hero"
+            name: "hero"
+            widget: "object"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Subtitle", name: "subtitle", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
+              - { label: "CTA Button", name: "cta", widget: "string" }
+
+          # About Section
+          - label: "About"
+            name: "about"
+            widget: "object"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Paragraph 1", name: "paragraph1", widget: "text" }
+              - { label: "Paragraph 2", name: "paragraph2", widget: "text" }
+              - { label: "Paragraph 3", name: "paragraph3", widget: "text" }
+
+          # Methods Section
+          - label: "Methods"
+            name: "methods"
+            widget: "object"
+            fields:
+              - { label: "Section Title", name: "title", widget: "string" }
+              - label: "EOT Method"
+                name: "eot"
+                widget: "object"
+                fields:
+                  - { label: "Title", name: "title", widget: "string" }
+                  - { label: "Description", name: "description", widget: "text" }
+              - label: "Regression Method"
+                name: "regression"
+                widget: "object"
+                fields:
+                  - { label: "Title", name: "title", widget: "string" }
+                  - { label: "Description", name: "description", widget: "text" }
+              - label: "Gestalt Method"
+                name: "gestalt"
+                widget: "object"
+                fields:
+                  - { label: "Title", name: "title", widget: "string" }
+                  - { label: "Description", name: "description", widget: "text" }
+              - label: "Simboldrama Method"
+                name: "simboldrama"
+                widget: "object"
+                fields:
+                  - { label: "Title", name: "title", widget: "string" }
+                  - { label: "Description", name: "description", widget: "text" }
+
+          # Services Section
+          - label: "Services"
+            name: "services"
+            widget: "object"
+            fields:
+              - { label: "Section Title", name: "title", widget: "string" }
+              - label: "Individual Session"
+                name: "individual"
+                widget: "object"
+                fields:
+                  - { label: "Title", name: "title", widget: "string" }
+                  - { label: "Duration", name: "duration", widget: "string" }
+                  - { label: "Price", name: "price", widget: "string" }
+                  - { label: "Description", name: "description", widget: "text" }
+              - label: "Package"
+                name: "package"
+                widget: "object"
+                fields:
+                  - { label: "Title", name: "title", widget: "string" }
+                  - { label: "Duration", name: "duration", widget: "string" }
+                  - { label: "Price", name: "price", widget: "string" }
+                  - { label: "Description", name: "description", widget: "text" }
+              - label: "Group Session"
+                name: "group"
+                widget: "object"
+                fields:
+                  - { label: "Title", name: "title", widget: "string" }
+                  - { label: "Duration", name: "duration", widget: "string" }
+                  - { label: "Price", name: "price", widget: "string" }
+                  - { label: "Description", name: "description", widget: "text" }
+
+          # Topics Section
+          - label: "Topics"
+            name: "topics"
+            widget: "object"
+            fields:
+              - { label: "Section Title", name: "title", widget: "string" }
+              - { label: "Tags", name: "tags", widget: "list" }
+
+          # Thoughts Section
+          - label: "Thoughts"
+            name: "thoughts"
+            widget: "object"
+            fields:
+              - { label: "Section Title", name: "title", widget: "string" }
+              - { label: "Quote 1", name: "quote1", widget: "text" }
+              - { label: "Quote 2", name: "quote2", widget: "text" }
+              - { label: "Quote 3", name: "quote3", widget: "text" }
+
+          # Contact Section
+          - label: "Contact"
+            name: "contact"
+            widget: "object"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
+              - { label: "CTA", name: "cta", widget: "string" }
+              - { label: "Telegram URL", name: "telegramUrl", widget: "string" }
+
+          # Footer Section
+          - label: "Footer"
+            name: "footer"
+            widget: "object"
+            fields:
+              - { label: "Tagline", name: "tagline", widget: "string" }
+              - { label: "Rights", name: "rights", widget: "string" }
+              - { label: "Telegram Label", name: "telegram", widget: "string" }

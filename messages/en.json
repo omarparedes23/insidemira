@@ -1,4 +1,10 @@
 {
+  "contact": {
+    "title": "Let's Meet",
+    "description": "Write to me on Telegram to arrange a free introductory meeting or ask a question.",
+    "cta": "@Mirapsy_life",
+    "telegramUrl": "https://t.me/Mirapsy_life"
+  },
   "nav": {
     "about": "About",
     "methods": "Methods",
@@ -7,11 +13,16 @@
     "thoughts": "Thoughts",
     "contact": "Contact"
   },
-  "hero": {
-    "title": "Mira",
-    "subtitle": "Space of the Soul",
-    "description": "Depth psychology for those seeking themselves. Individual and group sessions online and offline.",
-    "cta": "Write on Telegram"
+  "topics": {
+    "title": "What I Work With",
+    "tags": [
+      "Anxiety and panic attacks",
+      "Relationships and intimacy",
+      "Meaning and self-realization",
+      "Grief and loss",
+      "Relocation and adaptation",
+      "Creative crises"
+    ]
   },
   "about": {
     "title": "About Me",
@@ -38,53 +49,42 @@
       "description": "Intuitive drama method. Working with inner characters through guided imagination."
     }
   },
-  "services": {
-    "title": "Services",
-    "individual": {
-      "title": "Individual Session",
-      "duration": "60 minutes",
-      "price": "€80",
-      "description": "Deep one-on-one work. Suitable for working through a specific request or regular therapy."
-    },
-    "package": {
-      "title": "Package of 5 Sessions",
-      "duration": "5 × 60 minutes",
-      "price": "€350",
-      "description": "For those ready for transformation. Support throughout the change process."
-    },
-    "group": {
-      "title": "Group Session",
-      "duration": "120 minutes",
-      "price": "€40",
-      "description": "Therapeutic group of up to 8 participants. A powerful tool for working with relationships."
-    }
-  },
-  "topics": {
-    "title": "What I Work With",
-    "tags": [
-      "Anxiety and panic attacks",
-      "Relationships and intimacy",
-      "Meaning and self-realization",
-      "Grief and loss",
-      "Relocation and adaptation",
-      "Creative crises"
-    ]
-  },
   "thoughts": {
     "title": "Thoughts Out Loud",
     "quote1": "Psychotherapy is not when you're told what to do. It's when you're heard in such a way that you want to hear yourself.",
     "quote2": "We arrive in a new country but bring our old fears with us. Only when we acknowledge them can we build a true home.",
     "quote3": "The body remembers everything the mind has forgotten. Sometimes the path to oneself lies through sensation, not analysis."
   },
-  "contact": {
-    "title": "Let's Meet",
-    "description": "Write to me on Telegram to arrange a free introductory meeting or ask a question.",
-    "cta": "@Mirapsy_life",
-    "telegramUrl": "https://t.me/Mirapsy_life"
+  "hero": {
+    "title": "Mira",
+    "subtitle": "Space of the Soulaa",
+    "description": "Depth psychology for those seeking themselves. Individual and group sessions online and offline.",
+    "cta": "Write on Telegram"
   },
   "footer": {
     "tagline": "Space of the Soul",
     "rights": "© 2025 Mira. All rights reserved.",
     "telegram": "Telegram"
+  },
+  "services": {
+    "title": "Services",
+    "individual": {
+      "title": "Individual Session",
+      "duration": "60 minutes",
+      "price": "€40",
+      "description": "Deep one-on-one work. Suitable for working through a specific request or regular therapy."
+    },
+    "package": {
+      "title": "Package of 5 Sessions",
+      "duration": "5 × 60 minutes",
+      "price": "€175",
+      "description": "For those ready for transformation. Support throughout the change process."
+    },
+    "group": {
+      "title": "Group Session",
+      "duration": "120 minutes",
+      "price": "€20",
+      "description": "Therapeutic group of up to 8 participants. A powerful tool for working with relationships."
+    }
   }
 }
